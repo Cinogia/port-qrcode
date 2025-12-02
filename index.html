@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">PORTFÓLIO <span>CINOGIA</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://redebravo.netlify.app/">App</a></li>
+                <li><a href="https://cinogiaapp.netlify.app">Empresa</a></li>
+                <li><a href="#monografia">Monografia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero reveal">
+        <div class="hero-content">
+            <h1>Bem-vindos!</h1>
+            <p>Site com o objetivo de juntar as principais informações do nosso projeto de conclusão de curso.</p>
+
+            <div class="btn-group">
+                <button onclick="scrollToSection('app')">App</button>
+                <button onclick="scrollToSection('empresa')">Empresa</button>
+                <button onclick="scrollToSection('monografia')">Monografia</button>
+            </div>
+        </div>
+    <div class="hero-video-container tilt">
+    <video autoplay loop muted playsinline class="hero-video">
+        <source src="gif/gif.cinogia.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</div>
+
+</div>
+
+    </section>
+
+    <!-- ⭐ NOVO: CONTAINER DE VÍDEO COM ANIMAÇÃO POP-UP -->
+    <section class="video-container reveal">
+        <h2>Veja nosso Vídeo Pitch</h2>
+
+        <div class="video-thumb" onclick="openVideoPopup()">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
+            <div class="play-btn">▶</div>
+        </div>
+    </section>
+
+    <!-- POP-UP DO VÍDEO -->
+    <div id="video-popup" class="video-popup">
+        <div class="video-popup-content">
+            <span class="close-btn" onclick="closeVideoPopup()">×</span>
+
+            <iframe id="video-frame" 
+                src="" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <section class="container reveal" id="app">
+        <h2>Aplicativo</h2>
+        <p><br>BRAVO — uma rede que abraça quem chega<br>
+Conectando imigrantes ao Brasil de forma humana e eficiente: oferecemos apoio local, recursos práticos para o dia a dia, informações essenciais, eventos culturais e profissionais, além de uma comunidade acolhedora que entende seus desafios e caminha junto com você. Aqui, cada pessoa encontra orientação, pertencimento e oportunidades para começar uma nova etapa com segurança e confiança.
+</p>
+    </section>
+
+    <section class="container reveal" id="empresa">
+        <h2>Empresa</h2>
+        <p>A CINOGIA é uma empresa de tecnologia focada em construir soluções digitais inovadoras para empresas que desejam se destacar em um mercado competitivo. Combinamos design moderno, inteligência artificial e estratégias de automação para entregar resultados reais e sustentáveis.</p>
+    </section>
+
+    <section class="container reveal" id="monografia">
+        <h2>Monografia</h2>
+        <p>Veja nossa monografia, onde colocamos detalhe por detalhe do nosso projeto documentad, temas principais e conclusões.</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 • Cinogia Grupo 06 • Portfólio TCC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
