@@ -31,7 +31,7 @@ function scrollToSection(id) {
 const videoPopup = document.getElementById("video-popup");
 const videoFrame = document.getElementById("video-frame");
 
-const videoURL = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+const videoURL = "https://drive.google.com/file/d/11TWPSLGCuO1FMauuYiZLH4kVj-X6_Z6p/view?usp=drive_link";
 
 function openVideoPopup() {
   videoPopup.style.display = "flex";
